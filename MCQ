@@ -106,6 +106,33 @@ Ans : ERROR
 17.  How many except statements can a try-except block have? : more than zero
 18. In which of the following scenarios, finally block is executed? : Always
 19. Which of the keyword is used to display a customised error message to the user? : raise
+20. Which of the following modules are used to deal with Data compression and archiving? : 
+21. Which of the following methods of 'random' module is used to pick a single element, randomly, from a given list of elements? : choice
+22. Which of the following module is not used for parsing command line arguments automatically? : cmdparse
+23. Which of the following statement retreives names of all builtin objects? : import builtins; builtins.dict.keys()
+24. Which of the following expression can be used to check if the file 'C:\Sample.txt' exists and is also a regular file? : os.path.isfile(C:\Sample.txt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
