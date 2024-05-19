@@ -101,6 +101,12 @@ print(A.x)
 
 Ans : ERROR
 
+15 : Which of the following exception occurs, when an integer object is added to a string object? : TypeError
+16 : Can one block of except statements handle multiple exception? : Yes, like except ( NameError, SyntaxError, ...)
+17.  How many except statements can a try-except block have? : more than zero
+18. In which of the following scenarios, finally block is executed? : Always
+19. Which of the keyword is used to display a customised error message to the user? : raise
+
 
 
 
