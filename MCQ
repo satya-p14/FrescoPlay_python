@@ -7,4 +7,100 @@
 7. The output of the expression itertools.takewhile(lambda x: x<5, [1,4,6,4,1]) is _. : [1,4]
 8. Which of the following types of arguments can be passed to a function? All the options
 9. Which of the following are present in a function header? : Function name and parameter list
+10. What is the output of the following code?
+
+class A:
+    def __init__(self, a = 5):
+        self.a = a
+
+        def f1(self):
+            self.a += 10
+
+
+class B(A):
+    def __init__(self, b = 0):
+        A.__init__(self, 4)
+        self.b = b
+
+    def f1(self):
+        self.b += 10
+
+x = B()
+x.f1()
+print(x.a,'-', x.b)
+
+Ans  :  4 - 10
+
+11.  What is the output of the following code?
+
+class class1:
+    a = 1
+
+    def f1(self):
+        a = 2
+        class1.a += 1
+        print(class1.a, end=' ')
+        print(a, end=' ')
+
+class1().f1()
+class1().f1()
+
+Ans : 2 2 3 2
+
+12 . Which of the following method is used by a user-defined class to support '+' operator? : __add__
+13. What is the output of the following code?
+
+class A:
+    def __init__(self):
+        print('one')
+
+    def f(self):
+        print(float())
+        print(hex(-255))
+
+class B(A):
+    def __init__(self):
+        print('two')
+
+    def f(self):
+        print(float())
+        print(hex(-42))
+
+x = B()
+x.f()
+
+Ans :  two
+       0.0
+       -0x2a
+
+14.  What is the output of the following code?
+
+class A:
+    x = 0
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        A.x += 1
+
+    def __init__(self):
+        A.x += 1
+
+    def displayCount(self):
+        print('Count : %d' % A.x)
+
+    def display(self):
+        print('a :', self.a, ' b :', self.b)
+
+a1 = A('George', 25000)
+a2 = A('John', 30000)
+a3 = A()
+a1.display()
+a2.display()
+print(A.x)
+
+Ans : ERROR
+
+
+
 
