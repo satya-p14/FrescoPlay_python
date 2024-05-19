@@ -1,4 +1,4 @@
-Define a class "Movie" and Define the initializer method, __init__, that takes three values, Name of the Movie(name), Number of Tickets(n), and the Total Cost (cost), of a movie ticket printing machines, respectively.
+#Task 1 : Define a class "Movie" and Define the initializer method, __init__, that takes three values, Name of the Movie(name), Number of Tickets(n), and the Total Cost (cost), of a movie ticket printing machines, respectively.
 
 class Movie:
     def __init__(self, name, n, cost):
@@ -8,3 +8,12 @@ class Movie:
                     
     def __str__(self):
         return f"Movie : {self.name}\nNumber of Tickets : {self.n} \nTotal Cost : {self.cost}"
+
+
+
+#Task 2 : Classes and Objects 1
+#Define the class "comp" and define the initializer method, __init__, that takes 2 values and assign them "Real" and "Imaginary" attributes, respectively.
+
+
+
+
