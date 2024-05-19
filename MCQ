@@ -1,0 +1,10 @@
+1. The output of expression, k = [print(i) for i in "maverick" if i not in "aeiou"] is _. :  Prints all characters that are not vowels
+2. What is the return type of function 'id'?  : int
+3. The elements of an iterator can be accessed multiple times. : False
+4. A generator function can have multiple yield expressions. : True
+5. The output of the expression {0 if i%2 ==0 else 1 for i in range(8)} is . : {0, 1}
+6. What value does 'k' hold after executing the expression, k = [print(i) for i in "maverick" if i not in "aeiou"]? : A list of None's
+7. The output of the expression itertools.takewhile(lambda x: x<5, [1,4,6,4,1]) is _. : [1,4]
+8. Which of the following types of arguments can be passed to a function? All the options
+9. Which of the following are present in a function header? : Function name and parameter list
+
