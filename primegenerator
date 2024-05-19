@@ -1,0 +1,39 @@
+#Python 3 - Functions and OOPs | 3 | Prime Number Generator
+def primegenerator(num, val):
+    # Write your code here    
+    #Task 1: Generate - The prime number for the "num" value of 21 are:-
+    #       o   2,3,5,7,11,13,17,19
+    k=[]
+    n2=num
+    for i in range(2,n2) :
+      if i <6 and i>1 :
+        if i !=4 :          
+          k.append(i)        
+          continue
+      
+      n=int(i/2) # Dividing the number "i"  with 2, it will increase the code performace and time execution speed.
+      condition= False
+      
+      for j in range(2,n,) :
+        if  i%j==0:
+          condition=False
+          break
+        else:
+          condition= True  
+  
+      if condition: # Execute If Condition is True    
+        k.append(i)  
+        
+    #Task 2:
+    #        If the value of "val" is 0, then you should yield the following values only:
+    #           o  3,7,13,19
+    
+    if val==1:
+      for y in k[::2]:
+        yield y
+        
+    # Task 3:  If the value of "val" is 1, then you should yield the following values only:
+    #            o  2,5,11,17
+    if val==0:
+      for y in k[1::2]:
+        yield y 
