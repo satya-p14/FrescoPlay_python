@@ -14,6 +14,36 @@ class Movie:
 #Task 2 : Classes and Objects 1
 #Define the class "comp" and define the initializer method, __init__, that takes 2 values and assign them "Real" and "Imaginary" attributes, respectively.
 
+class comp:
+    def __init__(self, Real, Imaginary):
+        self.Real=Real 
+        self.Imaginary=Imaginary
+     
+    #Task 2: Define a method "add" inside the class "comp", which determines the sum of two complex numbers and Print the sum as "Sum of the two Complex numbers :35+47i".  
+    
+    def add(self,object_p2):
+        p1_Real = self.Real
+        p1_Imaginary  = self.Imaginary
+        p2_Real = object_p2.Real
+        p2_Imaginary  = object_p2.Imaginary
+        
+        print(f"Sum of the two Complex numbers :{p1_Real+p2_Real}+{p1_Imaginary+p2_Imaginary}i")
+    
+    #Task 3 : Define a method "sub" inside the class "comp", which determines the difference of two complex numbers and Print the difference as "Subtraction of the two Complex numbers :33+43i". 
+        
+    def sub(self,object_p2):
+        p1_Real = self.Real
+        p1_Imaginary  = self.Imaginary
+        p2_Real = object_p2.Real
+        p2_Imaginary  = object_p2.Imaginary
+        sign=""
+        diff = p1_Imaginary - p2_Imaginary
+        if diff < 0:
+            sign=f"-{abs(diff)}"
+        else  :
+            sign=f"+{diff}"        
+        print(f"Subtraction of the two Complex numbers :{p1_Real-p2_Real}{sign}i") 
+
 
 
 
