@@ -44,6 +44,48 @@ def FORLoop():
     return iter1
 
 
+#problem 3
+#
+# Define the Class for user-defined exceptions "MinimumDepositError" and "MinimumBalanceError" here
+#
+
+class MinimumDepositError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return str(self.value)
+
+class MinimumBalanceError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return str(self.value)
+    
+    
+def Bank_ATM(balance,choice,amount):
+    # Write your code here
+    bal=balance
+    ch=choice
+    
+    if balance<500:
+         raise ValueError("As per the Minimum Balance Policy, Balance must be at least 500")
+    
+    if ch==1:
+        if amount<2000:
+            raise MinimumDepositError("The Minimum amount of Deposit should be 2000.")
+        else:
+            bal+=amount
+            print(f"Updated Balance Amount:  {bal}")
+    elif ch==2:         
+        bal= bal-amount
+        if bal<500:
+            raise MinimumBalanceError("You cannot withdraw this amount due to Minimum Balance Policy")
+        else:
+            print(f"Updated Balance Amount:  {bal}")
+    else:
+        pass 
+
+
 
 
 
