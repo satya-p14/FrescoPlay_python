@@ -86,6 +86,42 @@ def Bank_ATM(balance,choice,amount):
         pass 
 
 
+#problem 4
+#
+#
+# Tassk 1: This is a typical Interface privided in the library, which takes 3 inputs from the library members, sequentially. 
+#         They are:
+#           o memberfee,
+#           o installment,
+#           o book
+#
+
+ 
+def Library(memberfee,installment,book):
+    
+    avail_book=["philosophers stone", "chamber of secrets","prisoner of azkaban", "goblet of fire", "order of phoenix","half blood prince","deathly hallows 1","deathly hallows 2"]
+    
+    
+    
+    # Task 2: Raise "ValueError" exception if the input for the number of installments is greater than "3". And printa message "Maximum Permitted Number of Installements is 3"
+    if installment > 3:
+        raise ValueError("Maximum Permitted Number of Installments is 3")
+    
+        
+    # Task 3: Raise 'ZeroDivisionError' exception if the input for the number of installments is equal to "0" and print a message "Number of installments cannot be Zero."
+    #         else : Print the amount per installment as "Amount per installment is 3000.0".
+    if installment ==0:
+        raise ZeroDivisionError("Number of Installments cannot be Zero.")
+    else:
+        amt_per_install= memberfee/installment
+        print(f"Amount per Installment is  {amt_per_install}")
+      
+    # Task 4: Raise "NameErro" exception if the user is looking for a book other than the books mentioned above and print a messsage "No such books exists in this section".
+    #          else: print "It is available in this section".   
+    if book not in avail_book:
+        raise NameError("No such book exists in this section")
+    else:
+        print("It is available in this section")
 
 
 
