@@ -1,0 +1,44 @@
+class parent:
+  def __init__(self, total_asset):
+    self.total_asset = total_asset
+
+  def display(self):
+    print("Total Asset Worth is "+str(self.total_asset)+" Million.")
+    print("Share of Parents is "+str(round(self.total_asset/2, 2))+" Million.")
+    
+class son(parent):
+    def __init__(self, t, sp):
+        parent.__init__(self, t)
+        self.son_Percentage = round(((t *sp)/100), 2)
+    
+    def son_display(self):
+        print("Share of Son is {} Million.".format(self.son_Percentage))
+
+class daughter(parent):
+    def __init__(self, t, dp):
+        parent.__init__(self,t)
+        self.daughter_Percentage = round(((t *dp)/100), 2)
+        
+    def daughter_display(self):
+        print(f"Share of Daughter is {self.daughter_Percentage} Million.")
+
+if __name__ == '__main__':    
+    t = int(input())
+    sp = int(input())
+    dp = int(input())
+    obj1 = parent(t)
+
+    obj2 = son(t,sp)
+    obj2.son_display()
+    obj2.display()
+
+
+    obj3 = daughter(t,dp)
+    obj3.daughter_display()
+    obj3.display()
+    
+    print(isinstance(obj2,parent))
+    print(isinstance(obj3,parent))
+
+    print(isinstance(obj3,son))
+    print(isinstance(obj2,daughter))
