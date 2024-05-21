@@ -1,0 +1,46 @@
+
+#Functions and OOPs 5 Classes and Objects 2 - [Task 2]
+#polymorphism
+#1. Define a class 'rectangle' with two methods 'display' and 'area'.
+# Define the method 'display' such that it will Print the message "This is a Rectangle" upon calling.
+#Define the method 'area' which takes 2 parameters 'Length' and 'Breadth' and find the area of the rectangle and Print as "Area of Rectangle is 144".
+#2. Define a class 'square' with two methods 'display' and 'area'.
+# Define the method 'display' such that it will Print the message "This is a Square" upon calling 
+#Define the method 'area' which takes a single parameter 'Side' and find the area of the square and Print as "Area of square is 169".
+
+import math
+import os
+import random
+import re
+import sys
+
+class rectangle:
+    def area(self, Length, Breadth):
+        area = Length * Breadth
+        print(f"Area of Rectangle is  {area}")
+        
+    def display(self):
+        print("This is a Rectangle")
+
+    
+class square:
+    def area(self, Side):
+        area = Side ** 2
+        print(f"Area of square is  {area}")
+        
+    def display(self):
+        print("This is a Square")
+
+if __name__ == '__main__':
+    
+    l = int(input())
+    b = int(input())
+    s = int(input())
+
+    obj1 = rectangle()
+    obj1.display()
+    obj1.area(l,b)
+
+    obj2 = square()
+    obj2.display()
+    obj2.area(s)
