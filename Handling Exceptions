@@ -21,3 +21,53 @@ if __name__ == '__main__':
         Handle_Exc1()
     except ValueError as exp:
         print(exp)
+
+
+
+#problem -2
+#Handling Exceptions 2
+#
+# Task1 : Write the function definition for the function "FORLoop", which takes no parameters, as follows:
+# (a) Get an Integer input "n" from the user.
+# (b) Create a LIST of "n" integers from 
+#
+
+def FORLoop():
+    # Write your code here
+    n= int(input())
+    l1= [ int(input())   for i in range(n)  ]
+    print(l1)
+    iter1=iter(l1)
+    
+    for i in range(n):
+        print(next(iter1))       
+    return iter1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
