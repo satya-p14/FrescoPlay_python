@@ -1,0 +1,23 @@
+#Task 1: Write the function "Handle_Exc1", that takes no parameters and will handle the "ValueError" exception.
+#Task 2: Read two integers say a and b from STDIN.
+#Task 3: Perform the following operations:-
+    #   (a) IF:       Raise "ValueError" exception if a is greater than "150" or if b is less than "100" and print a message "Their sum is out of range."
+    #   (b) Else IF : Raise "ValueError" exception if their sum is greater than "400" and print "Their sum is out of range".
+    #   (c) If none of above Exceptions happens, then print "All in range"
+
+def Handle_Exc1():
+    # Write your code here
+    a = int(input())
+    b = int(input())
+    if a > 150 or b < 100:
+        raise ValueError("Input integers value out of range.")
+    elif (a+b) > 400:
+        raise ValueError("Their sum is out of range")
+    else:
+        print("All in range")
+
+if __name__ == '__main__':
+    try:
+        Handle_Exc1()
+    except ValueError as exp:
+        print(exp)
