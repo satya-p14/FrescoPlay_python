@@ -1,0 +1,42 @@
+#
+# Complete the 'dateandtime' function below.
+#
+# The function accepts INTEGER val as parameter.
+# The return type must be LIST.
+#
+
+# Note: DateTime Module needed to import for completion this 
+
+
+def dateandtime(val,tup):
+    # Write your code here    
+    l=[]
+    if val==1:       
+        d=datetime.date(tup[0],tup[1],tup[2])        
+        p=d.strftime("%d/%m/%Y")              
+        l.append(d)
+        l.append(p)  
+        
+    elif val== 2:
+           
+        tup=int(''.join(map(str, tup)))        
+        date_time=datetime.date.fromtimestamp(tup)         
+        l.append(date_time)
+        
+    elif val==3:        
+        t=datetime.time(tup[0],tup[1],tup[2])
+        l.append(t)
+        l.append(t.strftime("%I"))
+
+    elif  val==4:
+      Day_Month_YearInDays=["%A", "%B", "%j"]
+      inp= tup   #(2017, 11, 18)
+      dt = datetime.datetime.strptime(f"{inp[0]}/{inp[1]}/{inp[2]}", "%Y/%m/%d")
+      l=list(map(lambda x: dt.strftime(x),Day_Month_YearInDays))
+               
+    elif val==5:              
+        d=datetime.date(tup[0],tup[1],tup[2])
+        t=datetime.time(tup[3],tup[4],tup[5])
+        z=datetime.datetime.combine(d,t)        
+        l.append(z )
+    return  l
