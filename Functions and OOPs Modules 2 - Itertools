@@ -1,0 +1,84 @@
+#
+# Complete the 'usingiter' function below.
+#
+# The function is expected to return a TUPLE.
+# The function accepts following parameters:
+#  1. TUPLE tupb
+#
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+import itertools
+import operator
+
+def performIterator(tuplevalues):
+    # Write your code here
+    #1
+    t= tuplevalues
+    temp=[]
+    b=[]
+    y=itertools.cycle(t[0])
+    for i in range(length):
+        if i > 3:
+            break
+        temp.append(next(y))
+    b.append(tuple(temp))
+    
+    #2
+    t= tuplevalues
+    temp.clear()
+    t=itertools.repeat(t[1][0], length)
+    for i in range(length):
+        temp.append(next(t))
+    b.append(tuple(temp))
+    
+    #3:    
+    t= tuplevalues
+    temp.clear()
+    j=itertools.accumulate(t[2], operator.add)    
+    for i in j:
+        temp.append(i)
+    b.append(tuple(temp))
+    
+    #4
+    t= tuplevalues
+    temp.clear()
+    t=itertools.chain(*t)
+
+    for i in t:
+        temp.append(i)
+    b.append(tuple(temp))
+    
+    #5
+    temp2=temp.copy()
+    t=itertools.filterfalse(lambda x : x%2 == 0, temp2)
+    temp.clear()
+    for i in t:
+        temp.append(i)
+
+    b.append(tuple(temp))
+    b=tuple(b)
+    return b
+
+
+if __name__ == '__main__':
+
+    length = int(input().strip())
+
+    qw1 = []
+    for i in range(4):
+        qw2 = []
+        for _ in range(length):
+            qw2_item = int(input().strip())
+            qw2.append(qw2_item)
+        qw1.append(tuple(qw2))
+    tupb = tuple(qw1)
+
+    q = performIterator(tupb)
+    print(q)
+
+
