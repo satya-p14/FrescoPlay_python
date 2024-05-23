@@ -1,0 +1,121 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+import collections
+
+
+
+#
+# Complete the 'collectionfunc' function below.
+#
+# The function accepts following parameters:
+#  1. STRING text1
+#  2. DICTIONARY dictionary1
+#  3. LIST key1
+#  4. LIST val1
+#  5. DICTIONARY deduct
+#  6. LIST list1
+#
+
+def collectionfunc(text1, dictionary1, key1, val1, deduct, list1):
+    # Write your code here
+    d = {}
+    #1
+    for i in text1.split():
+        if i in d:
+            d[i]+=1
+        else:
+            d[i]= 1
+    sort_d= dict(sorted(d.items(), key= lambda kv:kv[0]))
+    print(sort_d)
+
+    #2
+    cou = collections.Counter(dictionary1)
+    for each in deduct:
+        cou[each]-=deduct[each]
+    print(dict(cou))
+    
+    #3
+    orde=collections.OrderedDict()
+    for i in range(len(key1)):
+        orde[key1[i]]= val1[i]
+    del orde[key1[1]]
+    orde[key1[1]]=val1[1]
+    print(dict(orde))
+    
+    #4
+    d4={ "odd":[],"even":[]}
+    for i in list1:
+        if i%2==0:
+            temp=d4["even"]
+            temp.append(i)
+            d4["even"]=temp 
+        else:
+            temp =d4["odd"]
+            temp.append(i)
+            d4["odd"]=temp 
+    if d4["even"] ==[]:
+        del d4["even"]
+    if d4["odd"]==[]:
+        del d4["odd"]
+
+    print(d4)
+    
+
+if __name__ == '__main__':
+    from collections import Counter
+
+    text1 = input()
+    
+    n1 = int(input().strip())
+    qw1 = []
+    qw2 = []
+    for _ in range(n1):
+        qw1_item = (input().strip())
+        qw1.append(qw1_item)
+        qw2_item = int(input().strip())
+        qw2.append(qw2_item)
+    testdict={}
+    for i in range(n1):
+        testdict[qw1[i]]=qw2[i]
+    collection1 = (testdict)
+    
+    qw1 = []
+    n2 = int(input().strip())
+    for _ in range(n2):
+        qw1_item = (input().strip())
+        qw1.append(qw1_item)
+    key1 = qw1
+    
+    qw1 = []
+    n3 = int(input().strip())
+    for _ in range(n3):
+        qw1_item = int(input().strip())
+        qw1.append(qw1_item)
+    val1 = qw1
+
+    n4 = int(input().strip())
+    qw1 = []
+    qw2 = []
+    for _ in range(n4):
+        qw1_item = (input().strip())
+        qw1.append(qw1_item)
+        qw2_item = int(input().strip())
+        qw2.append(qw2_item)
+    testdict={}
+    for i in range(n4):
+        testdict[qw1[i]]=qw2[i]
+    deduct = testdict
+
+    qw1 = []
+    n5 = int(input().strip())
+    for _ in range(n5):
+        qw1_item = int(input().strip())
+        qw1.append(qw1_item)
+    list1 = qw1
+
+    collectionfunc(text1, collection1, key1, val1, deduct, list1)
