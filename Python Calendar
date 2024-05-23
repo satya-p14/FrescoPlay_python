@@ -1,0 +1,37 @@
+import math
+import os
+import random
+import re
+import sys
+import calendar
+from collections import Counter
+
+def usingcalendar(datetuple):
+    # Write your code here
+    
+    #Task 1: Checkwhether the given year from the tuple is a leap year.
+    #          if it is a leap year then assign the month's value as 2 throughout the whole function. And print the monthly calendar for the specified year and month.
+
+    year = datetuple[0]
+    month= datetuple[1]
+    date = datetuple[2]
+    
+    if year%4==0: # Checking wheather Leap Year True or False 
+        month=2
+        
+    obj_Cal= calendar.TextCalendar(calendar.MONDAY)  # Fixing the Calendar starts with Monday
+    calendar_display = obj_Cal.formatmonth(year, month)
+    print(calendar_display)
+    
+    #Task 2: Use "itermonthdates" module from the calendar to iterate through the dates of the specified month and year in the calendar. And print the last 7 dates that appears on the calendar of that months as a list.
+    w=list( obj_Cal.itermonthdates(year, month))
+    print(w[-7:])
+
+    # Task 3: Print the day of the week which appears the most frequent in the specified month and the year.
+    #        If there is more than one frequent day, then consider the one that comes first. Ex: If there are same number of Monday and Tuesday, then consider Monday.   
+    counter_object = Counter(d.strftime('%A') for d in obj_Cal.itermonthdates(year, month) if d.month==month)
+    common_Days=counter_object.most_common()
+    print(common_Days[0][0])
+
+
+
