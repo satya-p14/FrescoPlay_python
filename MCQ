@@ -177,7 +177,8 @@ Answer : 13
          9
 
 40. Classes can also be decorated, if required, in Python. :  Yes
-
+41. If a property named temp is defined in a class, which of the following decorator statement is required for deleting the temp attribute ? : @temp.deleter
+42. 
 
 
 
