@@ -184,6 +184,21 @@ Answer : 13
 45. Which of the following methods have to be defined in a class to make it act like a context manager? : __enter__, __exit__
 46. What does the context manager do when you are opening a file using with? : It closes the opened file automatically
 47. A Coroutine is a generator object. : true
+48. Which of the following methods is used to pass input value to a coroutine? : Send
+49. Which of the following is true about property decorator? : property decorator is used either for getting, setting or deleting an attribute
+50. Classes can also be decorated, if required, in Python. : True
+51. If a non-existing file is opened for writing, an error occurs. : false
+52. If a property named temp is defined in a class, which of the following decorator statement is required for setting the temp attribute? : @temp.setter
+53. Which of the following method is used to fetch next one row of a query result? : fetchone
+54. Which of the following statement is used to open the file C:\Sample.txt for reading in binary format only? : 
+55. What does the match method of re module do? : It matches a pattern at the start of the string
+56. Which of the following decorator function is used to create a class method? : classmethod
+57. Which of the following command is used to read the next line from a file using the file object fo? : fo.readline()
+58. Which of the following method is used to fetch all the rows of a query result? : fetchall
+59. If an exsiting file is opened for writing, its old contents are overwritten with the new file contents. : True
+60. Which of the following expression is used to compile the pattern p? : re.compile(p)
+61. Which of the following syntax is used to name a grouped portion of a match? : ?P<group_name>
+62. Which of the following is true about decorators? : Decorators can be chained
 
 
 
