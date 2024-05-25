@@ -111,6 +111,11 @@ Ans : ERROR
 22. Which of the following module is not used for parsing command line arguments automatically? : cmdparse
 23. Which of the following statement retreives names of all builtin objects? : import builtins; builtins.dict.keys()
 24. Which of the following expression can be used to check if the file 'C:\Sample.txt' exists and is also a regular file? : os.path.isfile(C:\Sample.txt)
+25.  Which of the following modules support regular expressions in Python? : re
+26. What does the search method of re module do? :  It matches the pattern at any position of the string.
+27. What is the output of the expression re.split(r'[aeiou]', 'abcdefghij')? : ['', 'bcd', 'fgh', 'j']
+28. Which of the following expression is used to compile the pattern p : re.compile(p)
+29. What does seek method of a file object do? : Moves the current file position to a different location at a defined offset.
 
 
 
