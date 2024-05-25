@@ -1,0 +1,41 @@
+# Matching Pattern and replace
+
+#!/bin/python3
+
+import sys
+import os
+import io
+import re
+
+
+# Complete the function below.
+def subst(pattern, replace_str, string):
+    #susbstitute pattern and return it
+    return re.sub(pattern, replace_str, string)
+
+
+def main():
+    addr = ['100 NORTH MAIN ROAD',
+            '100 BROAD ROAD APT.',
+            'SAROJINI DEVI ROAD',
+            'BROAD AVENUE ROAD']
+            
+    #Create pattern Implementation here     
+    #Use subst function to replace 'ROAD' to 'RD.',Store as new_address
+    
+    print(subst(r"\s+Road\s+", 'RD. ', 'BRoad'))
+    new_address = [subst(r'\s+ROAD\s+', ' RD. ', a) for a in addr]
+    new_address = [subst(r'\s+ROAD$', ' RD.', a) for a in new_address]
+    new_address = [subst(r'^ROAD\s+', ' RD. ', a) for a in new_address]
+    return new_address
+
+'''For testing the code, no input is required'''
+
+if __name__ == "__main__":
+    f = open(os.environ['OUTPUT_PATH'], 'w')
+
+    res = main();
+    f.write(str(res) + "\n")
+
+
+    f.close()
