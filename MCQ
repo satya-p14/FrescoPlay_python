@@ -178,7 +178,9 @@ Answer : 13
 
 40. Classes can also be decorated, if required, in Python. :  Yes
 41. If a property named temp is defined in a class, which of the following decorator statement is required for deleting the temp attribute ? : @temp.deleter
-42. 
+42. Which of the following decorator function is used to create a class method? : classmethod
+43. Which of the following decorator function is used to create a static method? : staticmethod
+44. Which of the following module helps in creating abstract classes in Python? : abc
 
 
 
