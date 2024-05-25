@@ -116,6 +116,11 @@ Ans : ERROR
 27. What is the output of the expression re.split(r'[aeiou]', 'abcdefghij')? : ['', 'bcd', 'fgh', 'j']
 28. Which of the following expression is used to compile the pattern p : re.compile(p)
 29. What does seek method of a file object do? : Moves the current file position to a different location at a defined offset.
+30. Which of the following package provides the utilities to work with postgreSQL database? : psycopg2
+31. Which of the following method is used to fetch next one row of a query result? : fetchone
+32. Which of the following package provides the utilities to work with MySQLDB database? : MySQLdb
+33. Which of the following method is used to insert multiple rows at a time in sqlite3 datatbase? : executemany
+34. Which of the following package provides the utilities to work with MongoDB database? : pymongo
 
 
 
