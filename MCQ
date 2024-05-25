@@ -121,8 +121,45 @@ Ans : ERROR
 32. Which of the following package provides the utilities to work with MySQLDB database? : MySQLdb
 33. Which of the following method is used to insert multiple rows at a time in sqlite3 datatbase? : executemany
 34. Which of the following package provides the utilities to work with MongoDB database? : pymongo
+35. What is the output of the following code? : 24
+    def f(x):
+        return 3*x
+    
+    def g(x):
+        return 4*x
+    
+    print(f(g(2)))
+
+36. What is the output of the following code? :  [6, 6, 6, 6]
+
+    def multipliers():
+        return [lambda x : i * x for i in range(4)]
+    
+    print([m(2) for m in multipliers()])
 
 
+37. What is the output of the following code? :
+
+    def outer(x, y):
+    
+        def inner1():
+            return x+y
+    
+        def inner2():
+            return x*y
+    
+        return (inner1, inner2)
+    
+    
+    (f1, f2) = outer(10, 25)
+    
+    print(f1())
+    print(f2())
+
+Answer :  35 
+          250
+
+38. A closure does not hold any data with it. : False
 
 
 
