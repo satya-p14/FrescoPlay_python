@@ -181,6 +181,8 @@ Answer : 13
 42. Which of the following decorator function is used to create a class method? : classmethod
 43. Which of the following decorator function is used to create a static method? : staticmethod
 44. Which of the following module helps in creating abstract classes in Python? : abc
+45. Which of the following methods have to be defined in a class to make it act like a context manager? : __enter__, __exit__
+46. What does the context manager do when you are opening a file using with? : It closes the opened file automatically
 
 
 
