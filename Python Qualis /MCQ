@@ -34,6 +34,68 @@
 
 18. nose can recognise tests which are not part of a Test class, derived from a Parent class. State True or False : true
 
+19. Which of the following commands run only one test case, present in sample_module.py using pytest? : py.test sample_module.py::TestCase1::test_method1
+
+20. Which of the following command is used to discover all tests in a project and execute them using pytest? : py.test
+
+21. Which of the following are the function level fixtures available in pytest : setup_function, teardown_function
+
+22. Which of the following option is used to generate Junit style test report in xml using pytest :  –-junitxml
+
+23. pytest is available as a part of Python standard library. State true or false. : False
+
+24. Which of the following method is used to check if a regular expression matches a string or not, with unittest : assertRegexpMatches
+
+25. Which of the following decorator is used to skip a test unconditionally with pytest? : @pytest.mark.skip
+
+26. Unit Testing is the highest level of testing. State true or false. : False
+
+27. Unittest Tests can be run using nose. State true or false. :  true
+
+28. Which of the following is a docstring? : A Multiline string
+
+29. A single test module contains only one Test Class. State true or false. : False
+
+30. Which of the following command is used to discover all tests in a project and execute them using pytest? : py.test
+
+31. Which of the following doctest directive is used to deal with unexpected whitespace that appears in the output? : # doctest: +NORMALIZE_WHITESPACE
+
+32. Which of the following option is used to generate test report in xml using nose : --with-xunit
+
+33. pytest is capable of discovering and running tests written in unittest and nose. State true or false : True
+
+34. Which of the following decorator is used to transform a user defined function into a fixture using pytest? : @pytest.fixture
+
+35. Which of the following are the module level fixtures of unittest framework? : 
+
+36. What is the purpose of using self.id in tests, while working with unittest : self.id returns the name of method
+
+37. Which of the following statement ensures that all tests present in sample_test_module.py are run while using the command python sample_test_module.py : unittest.main
+
+38. unittest is a xUnit-style based unit testing framework in Python. State true or false : true
+
+39. A doctest mixes documentation and testing. State true or false. : True
+
+40. Which type of testing is done when one of your existing functions stop working : Regression testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
