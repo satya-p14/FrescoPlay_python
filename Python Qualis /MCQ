@@ -1,0 +1,9 @@
+1. Which of the following are the unit testing packages availabale in Python? : All of those Mentioned ( unittest, doctest, and PyTest )
+
+2. Which type of testing is done when one of your existing functions stop working? : regression testing
+
+3. The real objective of Software testing is to ensure 100% defect free product. State true or false. : False ( Testing is done in order to find out as many problems as possible and to sort out all the bugs while it running. Developing a 100% defect-free software is impossible as errors occur while the software is deployed in the environment )
+
+4. The testing method, which is used to test individual components of a program is known as : Unit testing
+
+5. Which of the following is the next level of testing to unit testing? : Integration testing
