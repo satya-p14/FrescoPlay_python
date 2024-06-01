@@ -7,3 +7,41 @@
 4. The testing method, which is used to test individual components of a program is known as : Unit testing
 
 5. Which of the following is the next level of testing to unit testing? : Integration testing
+
+6. Which of the following special attribute can be used to access a doc string in a program? : __doc__
+
+7. Which of the following is true about a docstring? : docstring is optional in a function, class or a module
+
+8. Which of the following doctest directive is used to deal with unexpected whitespace that appears in the output? : # doctest: +NORMALIZE_WHITESPACE
+
+9. Which of the following method is used to catch exceptions in a test, with unittest? : assertRaises
+
+10. unittest is a xUnit-style based unit testing framework in Python. State true or false : True
+
+11. Which of the following decorator is used to skip a test if a given condition is false, with unittest? unittest.skipUnless
+
+12. Which of the following decorator need to be used while working with setUpClass and tearDownClass fixtures :      @classmethod
+
+13. Which of the following is not a component of Xunit-Style Architecture? : Test Loader
+
+14. A single test module contains only one Test Class. State true or false. : False
+
+15. Test discovery is simpler in unittest than in nose. State true or false. : False
+
+16. Unittest Tests can be run using nose. State true or false. : True
+
+17. nose supports use of fixtures at package level. State true or false. : True ( nose supports fixtures at the package, module, class, and test case level )
+
+18. nose can recognise tests which are not part of a Test class, derived from a Parent class. State True or False : true
+
+
+
+
+
+
+
+
+
+
+
+
